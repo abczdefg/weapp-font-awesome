@@ -1,0 +1,19 @@
+<view class="index">
+    <view class="head">
+        <view class="title">微信小程序</view>
+        <view class="desc">添加font-awesome：<text class="fa fa-flag"></text></view>
+    </view>
+
+    <view class="body">
+        <view class="widgets">
+            <block wx:for-items="{{list}}" wx:key="id">
+                <view class="widgets__item">
+                    <view class="widgets__info" >
+                        <text class="widgets__info-name">{{item.name}}</text>
+                        <text class="{{item.fa}}"></text>
+                    </view>
+                </view>
+            </block>
+        </view>
+    </view>
+</view>
